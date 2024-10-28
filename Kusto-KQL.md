@@ -47,6 +47,13 @@ Assign Account with the string between the two paranthes ()
 2. item 2
 3. item 3
 
+
+tedst
+
+1. [link](Strings.md) "String manipulations"
+2. [link](Regex.md) "Regular expressions"
+3. [link](DatesTimes.md) "Working with date & times"
+
 *this is italic*
 
 **This is bold text**
