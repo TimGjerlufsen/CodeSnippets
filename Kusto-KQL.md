@@ -2,7 +2,7 @@
 
 <!-- vscode-markdown-toc -->
 * 1. [String manipulation](#Summary)
-* 2. [Features](#Features)
+* 2. [Regex](#Features)
 * 3. [Usage](#Usage)
 * 4. [Configuration](#Configuration)
 * 5. [Example](#Example)
@@ -18,12 +18,24 @@
 
 ## 1. <a name='String manipulation'></a>String manipulation 
 
-Split:
+#### Split:
+Example 1
 ```kusto
-select * from dual;
+DeviceFileEvents
+| extend FileExtension = split(FileName,".")[-1]
 ```
+Spilt the string FileName at the "." and assign the value to FileExtension
 
+Example 2
+```kusto
+DnsAudit_CL
+| extend Account = split(split(values[0],"(")[-1],")")[0]
+```
+Assign Account with the string between the two paranthes ()
+:bulb: **Tip:** [-1] means the last past
 
+[link](Powershell.md "Powershell.md)
+[link](Python.md)
 
 # Heading
 
@@ -87,6 +99,8 @@ enjoy :-)
 
 # Comments
 [This is a hidden comment.]: #
+
+#### Comment
 
 # Toggle
 <details>
