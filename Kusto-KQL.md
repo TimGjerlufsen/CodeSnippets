@@ -34,7 +34,7 @@ DnsAudit_CL
 Assign Account with the string between the two paranthes ()
 :bulb: **Tip:** [-1] means the last past
 
-[link](Powershell.md "Powershell.md)
+[link](Powershell.md "Powershell.md")
 [link](Python.md)
 
 # Heading
